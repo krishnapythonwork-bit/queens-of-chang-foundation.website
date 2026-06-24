@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Queens Of Change Foundation</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#8e44ad,#e91e63);
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+header h1{
+font-size:3rem;
+}
+
+header p{
+margin-top:10px;
+font-size:1.2rem;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:white;
+color:#e91e63;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+.about{
+padding:50px 20px;
+text-align:center;
+}
+
+.about img{
+width:300px;
+max-width:100%;
+border-radius:15px;
+margin-top:20px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:40px 20px;
+}
+
+.card{
+background:white;
+padding:25px;
+width:280px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+.dark{
+background:#111;
+color:white;
+}
+
+.dark .card{
+background:#222;
+color:white;
+}
+
+.toggle{
+position:fixed;
+top:20px;
+right:20px;
+padding:10px;
+cursor:pointer;
+border:none;
+border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<button class="toggle" onclick="darkMode()">🌙</button>
+
+<header>
+<h1>Queens Of Change Foundation</h1>
+<p>Small Efforts, Big Change</p>
+<a href="#" class="btn">Join Us</a>
+</header>
+
+<section class="about">
+<h2>About Us</h2>
+
+<p>
+Queens Of Change Foundation is dedicated to women empowerment,
+education, health awareness and creating positive social impact
+in communities across India.
+</p>
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="NGO">
+</section>
+
+<section class="cards">
+
+<div class="card">
+<h3>Women Empowerment</h3>
+<p>Supporting women through awareness and education programs.</p>
+</div>
+
+<div class="card">
+<h3>Education</h3>
+<p>Helping students gain opportunities and real-world learning.</p>
+</div>
+
+<div class="card">
+<h3>Community Support</h3>
+<p>Building stronger communities through social initiatives.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Queens Of Change Foundation</p>
+</footer>
+
+<script>
+function darkMode(){
+document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
